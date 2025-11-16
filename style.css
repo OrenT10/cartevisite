@@ -70,13 +70,13 @@ body {
 .name {
     font-size: 1.7em; 
     font-weight: 600;
-    color: #333333; 
+    color: #B91211; 
     margin-bottom: 5px;
 }
 
 .title {
     font-size: 1.1em;
-    color: #666666; 
+    color: #696969; 
     font-weight: 400;
 }
 
@@ -101,13 +101,13 @@ body {
 
 .info-item .label {
     font-size: 0.9em;
-    color: #888888; 
+    color: #E4190A; 
     font-weight: 500;
 }
 
 .info-item .value {
     font-size: 0.95em;
-    color: #333333; 
+    color: #696969; 
     font-weight: 500;
     text-align: right;
     word-break: break-all;
