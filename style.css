@@ -12,8 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
-    /* Fond très clair, presque blanc, pour faire ressortir les couleurs du logo */
     background-color: #f7f7f7; 
     padding: 20px 0; 
 }
@@ -22,10 +20,9 @@ body {
 .pass-card {
     width: 90%;
     max-width: 380px; 
-    
     background: #ffffff;
     border-radius: 18px; 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Ombre légèrement adoucie */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); 
     overflow: hidden; 
     display: flex;
     flex-direction: column;
@@ -37,11 +34,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    
-    /* Fond bordeaux tiré du logo */
     background-color: #8C1C1C; 
-    
-    border-bottom: 1px solid #7a1818; /* Bordure légèrement plus foncée */
+    border-bottom: 1px solid #7a1818; 
 }
 
 .logo {
@@ -51,7 +45,7 @@ body {
 
 .pass-header span {
     font-size: 0.9em;
-    color: #ffffff; /* Texte blanc sur fond bordeaux */
+    color: #ffffff; 
     font-weight: 500;
 }
 
@@ -60,49 +54,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
+    padding: 30px 20px 20px 20px; /* Moins d'espace en bas car plus de photo */
     text-align: center;
 }
 
-.profile-pic {
+/* .profile-pic { (COMMENTÉ/SUPPRIMÉ)
     width: 110px;
     height: 110px;
     border-radius: 50%; 
-    
-    /* Bordure très discrète ou légèrement grise du logo */
     border: 4px solid #f0f0f0; 
-    
     margin-bottom: 15px;
     object-fit: cover; 
-}
+} */
 
 .name {
     font-size: 1.7em; 
     font-weight: 600;
-    
-    /* Couleur de texte principale, gris foncé du logo */
     color: #333333; 
-    
     margin-bottom: 5px;
 }
 
 .title {
     font-size: 1.1em;
-    
-    /* Gris légèrement plus clair pour le titre */
     color: #666666; 
-    
     font-weight: 400;
 }
 
 /* --- Section d'informations (email, tel) --- */
 .pass-info {
     padding: 10px 25px 25px 25px;
-    
-    /* Fond très légèrement gris pour la section d'info */
     background-color: #fcfcfc; 
-    
-    border-top: 1px solid #eeeeee; /* Bordure plus douce */
+    border-top: 1px solid #eeeeee; 
 }
 
 .info-item {
@@ -110,7 +92,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
-    border-bottom: 1px solid #f0f0f0; /* Bordures d'éléments plus légères */
+    border-bottom: 1px solid #f0f0f0; 
 }
 
 .info-item:last-child {
@@ -119,61 +101,47 @@ body {
 
 .info-item .label {
     font-size: 0.9em;
-    
-    /* Gris moyen pour les labels */
     color: #888888; 
-    
     font-weight: 500;
 }
 
 .info-item .value {
     font-size: 0.95em;
-    
-    /* Couleur de texte des valeurs, gris foncé du logo */
     color: #333333; 
-    
     font-weight: 500;
     text-align: right;
     word-break: break-all;
 }
 
-/* --- Pied de page (bouton d'action) --- */
+/* --- Pied de page (QR Code) --- */
 .pass-footer {
     padding: 20px;
-    
-    /* Fond légèrement plus foncé pour le pied de page */
     background-color: #f5f5f5; 
-    
     border-top: 1px solid #eeeeee; 
-}
-
-.action-button {
+    
+    /* Centrer le contenu (le QR code) */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 15px;
-    
-    /* Couleur du bouton : Rouge principal du logo */
-    background-color: #B22222; /* Un rouge plus vif pour le bouton d'action */
-    color: #ffffff;
-    
-    text-decoration: none; 
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 12px;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    justify-content: center;
 }
 
-.action-button i {
-    margin-right: 10px; 
+.qr-code-container {
+    text-align: center;
 }
 
-.action-button:hover {
-    /* Rouge légèrement plus foncé au survol */
-    background-color: #8C1C1C; 
+.qr-code {
+    width: 150px; /* Taille du QR Code */
+    height: 150px;
+    border: 1px solid #e0e0e0; /* Bordure légère autour du QR code */
+    border-radius: 8px; /* Coins légèrement arrondis pour l'image du QR */
+    padding: 5px; /* Petit padding pour que le QR ne colle pas trop à la bordure */
+    background-color: #fff; /* Fond blanc pour le QR code */
+    margin-bottom: 10px;
 }
 
-.action-button:active {
-    transform: scale(0.98); 
+.qr-label {
+    font-size: 0.85em;
+    color: #666666;
+    font-weight: 500;
 }
